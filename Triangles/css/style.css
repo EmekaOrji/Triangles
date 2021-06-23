@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+  color: rgb(233, 23, 23);
+}
+input {
+  border: 2px solid red;
+  border-radius: 10px;
+  font-size: 3em;
+  width: 7%;
+  outline: none;
+}
+#answer {
+  padding: 1%;
+  border: 2px solid red;
+  border-radius: 10px;
+  font-size: 3em;
+  width: fit-content;
+  min-width: 7%;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+div {
+  margin-top: 1%;
+}
+@media screen and (max-width: 832px) {
+  input, #answer {
+    height: 30px;
+    font-size: 2em;
+  }
+  div {
+    margin-top: 4%;
+  }
+}
+@media screen and (max-width: 280px) {
+  input {
+    width: 20%;
+  }
+  #answer {
+    min-width: 20%;
+  }
+  div {
+    margin-top: 20%;
+  }
+}
