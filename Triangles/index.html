@@ -8,10 +8,31 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Calculate the Area of a Triangle</h1>
-  <label><p>BASE:</p> <input type="number" id="base"></label>
-  <label><p>HEIGHT:</p> <input type="number" id="height"></label>
-  <div>AREA: <p id="answer"></p></div>
+  <button class="menu-button" id="menu-btn"><span class="unicode">&#8227</span></button>
+  <div class="sidebar-container tuckin">
+    <ul>
+      <li class="head">
+        <h2>TRIANGLE</h2>
+        <h6>(Properties)</h6  >
+      </li>
+      <li class="x" id="area">Area</li>
+      <li class="x" id="perimeter">Perimeter</li>
+    </ul>
+  </div>
+  <div class="x" id="area-container">
+    <h1 id="area-header" class="h1 active-head-a">Calculate the Area of a Triangle</h1>
+    <label><p>BASE:</p> <input type="number" id="base"></label>
+    <label><p>HEIGHT:</p> <input type="number" id="height"></label>
+    <div class="answer">AREA: <p id="a-answer" class="answer-box"></p></div>
+  </div>
+  <div class="notactive x" id="perimeter-container">
+    <h1 id="perimeter-header" class="h1 active-head-p">Calculate the Perimeter of a Triangle</h1>
+    <label><p>SIDE 1:</p> <input type="number" id="side1"></label>
+    <label><p>SIDE 2:</p> <input type="number" id="side2"></label>
+    <label><p>SIDE 3:</p> <input type="number" id="side3"></label>
+    <div class="answer">PERIMETER: <p id="p-answer" class="answer-box"></p></div>
+  </div>
+  <div class="fixed" id="fixedbg"></div>
   
   <script src="js/triangle.js"></script>
 </body>
